@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
+    </style>
+    <!--This is the main container that contains the whole timeline.-->
+    <section class="design-section">
+        <div class="pagination">
+            <a href="#" style="background-color: #a9a9a9; padding:20px">Day 1</a>
+            <a href="#" style="padding:20px">Day 2</a>
+            <a href="#" style=" padding:20px">Day 3</a>
+            <a href="#" style=" padding:20px">Day 4</a>
+            <a href="#" style=" padding:20px">Day 5</a>
+            <a href="#" style=" padding:20px">Day 6</a>
+            <a href="#" style=" padding:20px">Day 7</a>
+        </div>
+        <div class="timeline">
+            <div class="timeline-empty">
+            </div>
+
+            <!--This is the class where the timeline graphics are 
+    housed in. Note that we have timeline-circle 
+    here for that pointer in timeline.-->
+
+            <div class="timeline-middle">
+                <div class="timeline-circle"></div>
+            </div>
+            <div class="timeline-component timeline-content">
+                <a href="https://www.tiktok.com/@touunsia/video/7100294011381959942" target="_blank"><img
+                        class="img-fluid" src="img/breakfast.jpg" alt="" width="300px"></a>
+                <h3>Breakfast</h3>
+                <p> El Ali</p>
+            </div>
+            <div class="timeline-component timeline-content">
+                <a href="https://www.tiktok.com/@yasminebelhajsalem/video/7240416024884038918?lang=fr"
+                    target="_blank"><img class="img-fluid" src="img/medina.jpg" alt="" width="300px"></a>
+                <h3>Tour</h3>
+                <p>Medina Arbi</p>
+            </div>
+            <div class="timeline-middle">
+                <div class="timeline-circle"></div>
+            </div>
+            <div class="timeline-empty">
+            </div>
+
+            <div class="timeline-empty">
+            </div>
+
+            <div class="timeline-middle">
+                <div class="timeline-circle"></div>
+            </div>
+            <div class=" timeline-component timeline-content">
+                <a href="https://www.tiktok.com/@tunisian.foryou/video/7181166640321678598" target="_blank"><img
+                        class="img-fluid" src="img/sup sanfour/tunis/rue hbib bourguiba.jpg" alt="" width="300px"></a>
+                <h3>tour</h3>
+                <p>Habib Bourguiba</p>
+            </div>
+            <div class=" timeline-component timeline-content">
+                <a href="https://www.tiktok.com/@popolaretrattoria/video/7161798899789761798" target="_blank"><img
+                        class="img-fluid" src="img/poplare.jpeg" alt="" width="300px" height="200px"></a>
+                <h3>Lunch</h3>
+                <p>Poplare Bardo</p>
+            </div>
+            <div class="timeline-middle">
+                <div class="timeline-circle"></div>
+            </div>
+            <div class="timeline-empty">
+            </div>
+
+            <div class="timeline-empty">
+            </div>
+            <div class="timeline-middle">
+                <div class="timeline-circle"></div>
+            </div>
+            <div class="timeline">
+                <!-- ... Autres éléments de la timeline ... -->
+                <div class="timeline-component timeline-content">
+                    <a href="#" onclick="openVideoPopup('bardo.mp4');">
+                        <img class="img-fluid" src="img/sup sanfour/tunis/bardo1.jpg" alt="" width="300px"
+                            height="200px">
+                    </a>
+                    <h3>Tour</h3>
+                    <p>Museum Bardo</p>
+                </div>
+            </div>
+            <div class=" timeline-component timeline-content">
+                <a href="https://www.tiktok.com/@my_food_guide/video/7201540698594708741" target="_blank"><img
+                        class="img-fluid" src="img/1.jpg" alt="" width="300px" height="200px"></a>
+                <h3>Dinner</h3>
+                <p> Chapati Hay mileha</p>
+            </div>
+            <div class="timeline-middle">
+                <div class="timeline-circle"></div>
+            </div>
+            <div class="timeline-empty">
+            </div>
+
+            <div class="timeline-empty">
+            </div>
+            <div class="timeline-middle">
+                <div class="timeline-circle"></div>
+            </div>
+
+
+
+        </div>
+        </div>
+    </section>
+    <div id="video-popup" onclick="closeVideoPopup()">
+        <video id="video-container" controls autoplay>
+            <!-- chemin/vers/votre/video.mp4 est remplacé dynamiquement par JavaScript -->
+            Votre navigateur ne prend pas en charge la lecture de la vidéo.
+        </video>
+    </div>
+
+    <script>
+        // Fonction pour ouvrir le pop-up avec la vidéo
+        function openVideoPopup(videoPath) {
+            document.getElementById('video-container').src = videoPath;
+            document.getElementById('video-popup').style.display = 'flex';
+        }
+
+        // Fonction pour fermer le pop-up
+        function closeVideoPopup() {
+            document.getElementById('video-container').pause();
+            document.getElementById('video-container').src = '';
+            document.getElementById('video-popup').style.display = 'none';
+        }
+    </script>
+
+
+</body>
+
+</html>

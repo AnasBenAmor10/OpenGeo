@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" data-footer="true" data-scrollspy="true">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>Acorn Admin Template | Generic Forms</title>
+    <meta name="description" content="Generic form examples with validation and different layouts.">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="img/favicon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="img/favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-196x196.png" sizes="196x196">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-128.png" sizes="128x128">
+    <meta name="application-name" content="&nbsp;">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="img/favicon/mstile-144x144.png">
+    <meta name="msapplication-square70x70logo" content="img/favicon/mstile-70x70.png">
+    <meta name="msapplication-square150x150logo" content="img/favicon/mstile-150x150.png">
+    <meta name="msapplication-wide310x150logo" content="img/favicon/mstile-310x150.png">
+    <meta name="msapplication-square310x310logo" content="img/favicon/mstile-310x310.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="font/CS-Interface/style.css">
+    <link rel="stylesheet"
+        href="https://acorn-html-classic-dashboard.coloredstrategies.com/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://acorn-html-classic-dashboard.coloredstrategies.com/css/vendor/OverlayScrollbars.min.css">
+    <link rel="stylesheet" href="https://acorn-html-classic-dashboard.coloredstrategies.com/css/vendor/select2.min.css">
+    <link rel="stylesheet"
+        href="https://acorn-html-classic-dashboard.coloredstrategies.com/css/vendor/select2-bootstrap4.min.css">
+    <link rel="stylesheet"
+        href="https://acorn-html-classic-dashboard.coloredstrategies.com/css/vendor/bootstrap-datepicker3.standalone.min.css">
+    <link rel="stylesheet" href="https://acorn-html-classic-dashboard.coloredstrategies.com/css/styles.css">
+    <link rel="stylesheet" href="https://acorn-html-classic-dashboard.coloredstrategies.com/css/main.css">
+    <script src="https://acorn-html-classic-dashboard.coloredstrategies.com/js/base/loader.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+
+    <style>
+        /* Style du hover pour les options de la liste déroulante */
+        .form-control option:hover {
+            background-color: #007bff;
+            /* Couleur de fond au survol */
+            color: #fff;
+            /* Couleur du texte au survol */
+        }
+
+        .select2-container--default .select2-results__option:hover {
+            background-color: #007bff;
+            /* Couleur de fond au survol */
+            color: #fff;
+            /* Couleur du texte au survol */
+        }
+
+        .h2,
+        h2 {
+            font-size: 1.65em;
+            text-align: center;
+            padding-top: 60px;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <div>
+
+
+
+        <section class="scroll-section" id="personal">
+            <h2 class="small-title; text-align:center;">Personal</h2>
+            <form class="tooltip-end-top" id="personalForm" novalidate>
+                <div class="card mb-5">
+                    <div class="card-body">
+                        <p class="text-alternate mb-4">
+
+                        </p>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="mb-3 top-label">
+                                    <input class="form-control" name="personalName">
+                                    <span>FULL NAME</span>
+                                </label>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="mb-3 top-label">
+                                    <input class="form-control" name="personalSocialSecurityNumber">
+                                    <span>SOCIAL SECURITY NUMBER</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="mb-3 top-label">
+                                    <input class="form-control" name="personalPhone">
+                                    <span>PHONE</span>
+                                </label>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="mb-3 top-label">
+                                    <input class="form-control" name="personalEmail">
+                                    <span>EMAIL</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row g-3">
+                            <div class="col-md-4">
+                                <label class="mb-3 top-label">
+                                    <input class="form-control" name="personalBirthday" required id="personalBirthday">
+                                    <span>BIRTHDAY</span>
+                                </label>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mb-3 top-label">
+                                    <select class="form-control" name="personalGender" id="personalGender">
+                                        <option label="&nbsp;"></option>
+                                        <option value="Female">Female</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                    <span>GENDER</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mb-3 top-label">
+                                    <select class="form-control" name="personalFiling" id="personalFiling">
+                                        <option label="&nbsp;"></option>
+                                        <option value="Single">Single</option>
+                                        <option value="Married">Married</option>
+                                        <option value="Couple">Couple</option>
+                                    </select>
+                                    <span>FILING STATUS</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mb-3 top-label">
+                                    <select class="form-control" name="personalFiling" id="personalFiling">
+                                        <option label="&nbsp;"></option>
+                                        <option value="Single">Solo</option>
+                                        <option value="Group">Group</option>
+                                    </select>
+                                    <span>TRAVELING</span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="mb-3 top-label">
+                                    <select class="form-control" name="personalFiling" id="personalFiling">
+                                        <option label="&nbsp;"></option>
+                                        <option value="OUTDOOR">OUTDOOR</option>
+                                        <option value="INDOOR">INDOOR</option>
+                                    </select>
+                                    <span>YOU PREFER TO BE IN A PLACE</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mb-3 top-label">
+                                    <select class="form-control" name="personalFiling" id="personalFiling">
+                                        <option label="&nbsp;"></option>
+                                        <option value="Single">BEACH</option>
+                                        <option value="Group">DESERT</option>
+                                        <option value="Group">FOREST</option>
+                                        <option value="Group">CITY</option>
+                                    </select>
+                                    <span>SELECT YOUR FAVORITE PLACE</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mb-3 top-label">
+                                    <select class="form-control" name="personalFiling" id="personalFiling">
+                                        <option label="&nbsp;"></option>
+                                        <option value="Single">Luxury</option>
+                                        <option value="Group">Normal tourist</option>
+                                        <option value="Group">Local Experience</option>
+                                        <option value="Group">In Front Of Nature</option>
+                                    </select>
+                                    <span>YOU PREFER LIFE</span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="mb-3 top-label">
+                                    <select class="form-control" name="personalFiling" id="personalFiling">
+                                        <option label="&nbsp;"></option>
+                                        <option value="Single">YES</option>
+                                        <option value="Group">NO</option>
+                                    </select>
+                                    <span>ON A BEACH YOU PREFER TO TAN</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mb-3 top-label">
+                                    <select class="form-control" name="personalFiling" id="personalFiling">
+                                        <option label="&nbsp;"></option>
+                                        <option value="Single">Quiet</option>
+                                        <option value="Group">Just For Swimming</option>
+                                        <option value="Group">Rocky Cliffs</option>
+                                        <option value="Group">Hot Springs</option>
+                                    </select>
+                                    <span>YOU PREFER BEACHES</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card-footer border-0 pt-0 d-flex justify-content-end align-items-center">
+                        <div>
+                            <button class="btn btn-icon btn-icon-end btn-primary" type="submit">
+                                <span>Save</span>
+                                <i data-acorn-icon="chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <script src="https://acorn-html-classic-dashboard.coloredstrategies.com/js/vendor/jquery-3.5.1.min.js"></script>
+        <script
+            src="https://acorn-html-classic-dashboard.coloredstrategies.com/js/vendor/bootstrap.bundle.min.js"></script>
+        <script
+            src="https://acorn-html-classic-dashboard.coloredstrategies.com/js/vendor/OverlayScrollbars.min.js"></script>
+        <script src="https://acorn-html-classic-dashboard.coloredstrategies.com/js/vendor/autoComplete.min.js"></script>
+        <script src="https://acorn-html-classic-dashboard.coloredstrategies.com/js/vendor/clamp.min.js"></script>
+        <script src="icon/acorn-icons.js"></script>
+        <script src="icon/acorn-icons-interface.js"></script>
+        <script src="https://acorn-html-classic-dashboard.coloredstrategies.com/js/cs/scrollspy.js"></script>
+        <script src="https://acorn-html-classic-dashboard.coloredstrategies.com/js/vendor/select2.full.min.js"></script>
+        <script
+            src="https://acorn-html-classic-dashboard.coloredstrategies.com/js/vendor/datepicker/bootstrap-datepicker.min.js"></script>
+        <script
+            src="https://acorn-html-classic-dashboard.coloredstrategies.com/js/vendor/datepicker/locales/bootstrap-datepicker.es.min.js"></script>
+        <script
+            src="https://acorn-html-classic-dashboard.coloredstrategies.com/js/vendor/jquery.validate/jquery.validate.min.js"></script>
+        <script
+            src="https://acorn-html-classic-dashboard.coloredstrategies.com/js/vendor/jquery.validate/additional-methods.min.js"></script>
+        <script src="https://acorn-html-classic-dashboard.coloredstrategies.com/js/base/helpers.js"></script>
+        <script src="https://acorn-html-classic-dashboard.coloredstrategies.com/js/base/globals.js"></script>
+        <script src="https://acorn-html-classic-dashboard.coloredstrategies.com/js/base/nav.js"></script>
+        <script src="https://acorn-html-classic-dashboard.coloredstrategies.com/js/base/search.js"></script>
+        <script src="https://acorn-html-classic-dashboard.coloredstrategies.com/js/base/settings.js"></script>
+        <script src="https://acorn-html-classic-dashboard.coloredstrategies.com/js/forms/genericforms.js"></script>
+        <script src="https://acorn-html-classic-dashboard.coloredstrategies.com/js/common.js"></script>
+        <script src="https://acorn-html-classic-dashboard.coloredstrategies.com/js/scripts.js"></script>
+</body>
+
+</html>
